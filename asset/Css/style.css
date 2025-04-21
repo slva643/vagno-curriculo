@@ -1,0 +1,350 @@
+/* ===== IMPORTAÇÃO DE FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===== ESTILO BASE (MOBILE FIRST) ===== */
+:host {
+  --colorwhite: "#fff"
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  background-color:  #004080;
+}
+
+.logo {
+  width: 100%;
+  max-width: 160px;
+  margin-top: 50px;
+  border-radius: 600px;
+  border: 3px solid #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  list-style: none;
+  margin: 12px 0;
+  color: #fff;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+.fa-solid {
+  padding: 0 10px;
+}
+
+.containe {
+  padding: 50px 0 0 10px;
+}
+
+.fa-bullseye {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+hr {
+  width: 95%;
+  border: 1px solid rgba(226, 226, 226, 0.425);
+  margin: 20px 0 18px 0;
+}
+
+.containe p {
+  color: #68728f;
+  line-height: 25px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+.containe h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #0153a0;
+}
+
+.card {
+  margin: 1.5em;
+  border: 1px solid rgb(190, 189, 189);
+  border-left: 5px solid black;
+  border-radius: 8px;
+}
+
+.a-briefcase {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.container-card {
+  width: 100%;
+  padding: 25px;
+}
+
+.container-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.container-card h4 {
+  font-size: 0.8em;
+  border: 1px solid rgba(218, 218, 218, 0.747);
+  border-radius: 50px;
+  display: inline-block;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  color: #011629;
+}
+
+.linkedin {
+  position: relative;
+  top: -20px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+
+.container-card p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: #5e667e;
+}
+
+.card-form {
+  margin: 1.5em;
+  border: 1px solid rgb(190, 189, 189);
+  border-radius: 8px;
+}
+
+.fa-graduation-cap {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.quebra {
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+  text-indent: -20px;
+  padding: 20px;
+}
+
+.fa-check-circle {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+}
+
+.link  {
+  padding: 5px;
+ 
+  background:  #004080;
+  border-radius: 5px;
+  border: none;
+  
+}
+.link:hover {
+  background: #0153a0;
+}
+
+.fa-circle {
+  padding-right: 10px;
+  color: rgb(105, 105, 105);
+}
+
+.habilidade h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  text-indent: -15px;
+  margin-left: 40px;
+  
+}
+
+
+
+.contato {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #f4f4fc;
+  padding-top: 50px;
+}
+
+.contato li {
+  display: flex;
+  margin-top: 30px;
+}
+
+.contato li a {
+  background-color: #004080;
+  width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contato li a:hover {
+  background-color: #0153a0;
+  transition: 0.3s all;
+}
+
+footer {
+  background-color: #004080;
+  height: 100px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ===== ESTILO PARA DESKTOP ===== */
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    height: 200px;
+  }
+  
+  #conatine-geral {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+    max-width: 150px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  ul li {
+    flex-direction: row;
+    margin: 0 10px;
+  }
+
+  .containe {
+    padding: 50px 50px 0px 50px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quebra {
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .contato li {
+    justify-content: center;
+  }
+
+  .contato li a {
+    width: 40%;
+  }
+
+  .container-cards {
+    display: flex;
+    flex-direction: ruw;
+  }
+
+ .habilidade {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 20px;
+ }
+
+ .habilidade h4 {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-indent: -15px;
+  margin-left: 40px;
+ }
+
+ .contato {
+  height: 250px;
+  padding: 20px 20px -20px 20px;
+ }
+
+ .contato li  {
+  display: inline-block;
+ }
+
+ footer {
+  margin-top: 0px;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background-color: #0c142c;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 160px;
+    margin-top: 50px;
+    border-radius: 600px;
+    border: 3px solid #fff;
+  }
+  
+  .titulo h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .titulo li {
+    font-size: 0.6em;
+  }
+}
